@@ -31,8 +31,8 @@ ALLOWED_HOSTS = ['cloudconnectv1.herokuapp.com','127.0.0.1']
 
 INSTALLED_APPS = [
 #'pin_passcode',
+    'home.apps.HomeConfig',
     'pin',
-    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
 
     'django.middleware.security.SecurityMiddleware',
-'django.middleware.security.SecurityMiddleware',
   'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

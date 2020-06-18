@@ -7,20 +7,17 @@
 </div>
 
 <div class="container">
+    {% for id,text,clr in data %}
+       <div class="d-flex justify-content-center">
+            <div class="p-2 bd-highlight">
+                Button {{ id }}
+            </div>
 
-    <div class="d-flex justify-content-around">
-
-    <form action=""" method="post" >
-    {% csrf_token %}
-    <div class="form-group">
-        <input class="form-control" id="pin" name="pin" placeholder="Send Text" type="text">
-    </div>
-    <div class="form-group  text-center">
-        <input class="btn btn-primary center" type="submit" value="Enter">
-    </div>
-    </form>
-
-  </div>
+            <div class="p-2 bd-highlight">
+                <button class="btn btn-{{clr}}" type="submit"  onclick="location.href='/switchbutton/{{id}}'" name='Switch'>{{ text }}</button>
+            </div>
+        </div>
+    {% endfor %}
 
 
 </div>
