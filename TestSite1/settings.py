@@ -25,7 +25,7 @@ SECRET_KEY = '#2i^i(5$r$3_+un$w68qb1y9ke#!!q)i9@1ig*qc$llnny%2ul'
 DEBUG = False
 
 ALLOWED_HOSTS = ['cloudconnectv1.herokuapp.com','127.0.0.1']
-
+PIN=1223
 
 # Application definition
 
